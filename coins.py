@@ -5,9 +5,9 @@ coins = []
 while coins_counter > 0:
 	random_one = round(random.random())
 	if random_one == 1:
-		coins.append("Î")
+		coins.append("О")
 	else:
-		coins.append("Ð")
+		coins.append("Р")
 	coins_counter = coins_counter - 1
 
 print (coins)
