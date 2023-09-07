@@ -1,13 +1,13 @@
 import random
-#сгенерируем монетки в количестве желаемом
-coins_counter = int(input ("Количество монет? "))
+#СЃРіРµРЅРµСЂРёСЂСѓРµРј РјРѕРЅРµС‚РєРё РІ РєРѕР»РёС‡РµСЃС‚РІРµ Р¶РµР»Р°РµРјРѕРј
+coins_counter = int(input ("РљРѕР»РёС‡РµСЃС‚РІРѕ РјРѕРЅРµС‚? "))
 coins = []
 while coins_counter > 0:
 	random_one = round(random.random())
 	if random_one == 1:
-		coins.append("О")
+		coins.append("ГЋ")
 	else:
-		coins.append("Р")
+		coins.append("Гђ")
 	coins_counter = coins_counter - 1
 
 print (coins)
@@ -15,16 +15,16 @@ print (coins)
 counter1 = 0
 counter2 = 0
 for coin in coins:
-	if coin == "О":
+	if coin == "Рћ":
 		counter1 = counter1 + 1
-	if coin == "Р":
+	if coin == "Р ":
 		counter2 = counter2 + 1
-#В следующей строке находим минимальное количество монет		
+#Р’ СЃР»РµРґСѓСЋС‰РµР№ СЃС‚СЂРѕРєРµ РЅР°С…РѕРґРёРј РјРёРЅРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РјРѕРЅРµС‚		
 flip_counts = str(min(counter1, counter2))
 
 ru = ""
 if ((flip_counts[-1] == "1" and len(flip_counts) == 1) or (flip_counts[-1] == "1" and len(flip_counts) >= 1 and flip_counts[-2] != "1")):
-    ru = "у"
+    ru = "Сѓ"
 if ((flip_counts[-1] in  ["2", "3", "4"] and len(flip_counts) == 1) or (flip_counts[-1] in  ["2", "3", "4"] and len(flip_counts) >= 1 and flip_counts[-2] != "1")):
-    ru = "ы"
-print('Нужно перевернуть минимум ' + flip_counts + " монет" + ru)
+    ru = "С‹"
+print('РќСѓР¶РЅРѕ РїРµСЂРµРІРµСЂРЅСѓС‚СЊ РјРёРЅРёРјСѓРј ' + flip_counts + " РјРѕРЅРµС‚" + ru)
