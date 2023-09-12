@@ -12,4 +12,4 @@ print ("произведение задуманных чисел S =" + str(p))
 
 foundX = int((s + math.sqrt(s*s - 4*p))/2)
 foundY = int((s - math.sqrt(s*s - 4*p))/2)
-print ("Задуманы числа x = " + str(foundX) + " и число y = " + str(foundY))
+print ("Задуманы число x = " + str(foundX) + " и число y = " + str(foundY))
