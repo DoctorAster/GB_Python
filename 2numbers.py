@@ -8,7 +8,7 @@ s = x + y
 p = x * y
 print ("Задуманы два числа")
 print ('Сумма задуманных чисел S = ' + str(s))
-print ("произведение задуманных чисел S =" + str(p))
+print ("Произведение задуманных чисел S =" + str(p))
 
 foundX = int((s + math.sqrt(s*s - 4*p))/2)
 foundY = int((s - math.sqrt(s*s - 4*p))/2)
